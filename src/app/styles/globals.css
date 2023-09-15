@@ -446,7 +446,7 @@ nav ul button:hover {
   }
 }
 
-@media (orientation: landscape) {
+@media ((max-width: 900px) and (max-height: 900px)) and (orientation: landscape) {
   * {
     font-size: 14px;
   }
