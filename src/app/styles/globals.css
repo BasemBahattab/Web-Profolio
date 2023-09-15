@@ -17,6 +17,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  color: white;
 }
 
 html,
@@ -112,6 +113,7 @@ nav ul button:hover {
     width: 5%;
     left: 45%;
   }
+
   to {
     width: 100%;
     left: 0;
@@ -218,6 +220,7 @@ nav ul button:hover {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -225,7 +228,7 @@ nav ul button:hover {
 
 #firstSlide-aboutMe,
 #secondSlide-aboutMe,
-#secondSlide-aboutMe .display-CV  {
+#secondSlide-aboutMe .display-CV {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -268,34 +271,44 @@ nav ul button:hover {
 }
 
 @keyframes borderAnimation {
+
   0%,
   100% {
     border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%;
   }
+
   10% {
     border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
   }
+
   20% {
     border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%;
   }
+
   30% {
     border-radius: 39% 61% 47% 53% / 37% 40% 60% 63%;
   }
+
   40% {
     border-radius: 39% 61% 82% 18% / 74% 40% 60% 26%;
   }
+
   50% {
     border-radius: 100%;
   }
+
   60% {
     border-radius: 50% 50% 53% 47% / 72% 69% 31% 28%;
   }
+
   70% {
     border-radius: 50% 50% 53% 47% / 26% 22% 78% 74%;
   }
+
   80% {
     border-radius: 50% 50% 53% 47% / 26% 69% 31% 74%;
   }
+
   90% {
     border-radius: 20% 80% 20% 80% / 20% 80% 20% 80%;
   }
@@ -340,15 +353,19 @@ nav ul button:hover {
   0% {
     top: 30px;
   }
+
   25% {
     top: 40px;
   }
+
   50% {
     top: 50px;
   }
+
   75% {
     top: 40px;
   }
+
   100% {
     top: 30px;
   }
@@ -357,13 +374,6 @@ nav ul button:hover {
 @keyframes lazyDisplay {
   100% {
     visibility: visible;
-  }
-}
-
-@media (max-height: 700px) and (max-width:370px) {
-  .image-aboutMe {
-    height: 150px !important;
-    width: 150px !important;
   }
 }
 
@@ -378,7 +388,8 @@ nav ul button:hover {
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 850px) or (orientation: landscape) {
+
   .ProjectSlider>.swiper-button-next,
   .ProjectSlider>.swiper-button-prev {
     position: fixed !important;
@@ -405,8 +416,19 @@ nav ul button:hover {
   }
 }
 
+@media (max-height: 700px) and (max-width: 400px) {
+  .image-aboutMe {
+    height: 155px !important;
+    width: 155px !important;
+  }
+
+  .image-aboutMe img {
+    transform: translate(-7%, -20%);
+  }
+}
+
 @media (max-width: 680px) {
-  #secondSlide-aboutMe .display-CV   {
+  #secondSlide-aboutMe .display-CV {
     height: 75% !important;
     width: auto;
   }
@@ -418,15 +440,28 @@ nav ul button:hover {
   }
 }
 
-@media screen and (orientation: portrait) or (orientation: landscape){
+@media (orientation: portrait) or (orientation: landscape) {
   #secondSlide-aboutMe .display-CV img:last-child {
     visibility: visible;
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@media (orientation: landscape) {
+  * {
+    font-size: 14px;
+  }
+  nav ul button {
+    width: 30vh !important;
+    margin-top: 3vh !important;
+  }
+
+  .image-aboutMe {
+    height: 155px !important;
+    width: 155px !important;
+  }
+
+  .image-aboutMe img {
+    transform: translate(-7%, -20%);
   }
 }
 
