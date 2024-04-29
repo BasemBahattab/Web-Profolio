@@ -414,11 +414,6 @@ nav ul button:hover {
     height: 25px !important;
     margin-top: 10px !important;
   }
-
-  nav ul button {
-    width: 12vh;
-    font-size: 13px;
-  }
 }
 
 @media (max-height: 700px) and (max-width: 400px) {
@@ -429,6 +424,11 @@ nav ul button:hover {
 
   .image-aboutMe img {
     transform: translate(-7%, -20%);
+  }
+
+  nav ul button {
+    width: 12vh;
+    font-size: 13px;
   }
 }
 
