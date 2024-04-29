@@ -414,6 +414,11 @@ nav ul button:hover {
     height: 25px !important;
     margin-top: 10px !important;
   }
+
+  nav ul button {
+    width: 12vh;
+    font-size: 13px;
+  }
 }
 
 @media (max-height: 700px) and (max-width: 400px) {

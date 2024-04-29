@@ -11,7 +11,7 @@ export default function contactMe() {
         <div className="welcome-section">
             <div className="welcome-home">
                 <p>You can contact me Via:
-                    <a href="bahattabbasem@gmail.com">Email: bahattabbasem@gmail.com</a>
+                    <p><a href="bahattabbasem@gmail.com">Email: bahattabbasem@gmail.com</a></p>
                     <p>+966 546885693</p>
                 </p>
             </div>
