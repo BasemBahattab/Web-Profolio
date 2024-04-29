@@ -13,6 +13,9 @@ export default function nav() {
                 <Link href="/projects">
                     <button className='Projects'>Projects</button>
                 </Link>
+                <Link href="/contactMe">
+                    <button className='contactMe'>Contact Me</button>
+                </Link>
             </ul>
         </nav>
     )
